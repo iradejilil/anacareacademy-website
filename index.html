@@ -96,15 +96,18 @@ footer{background:#0f1520;padding:36px 5%;display:grid;grid-template-columns:1fr
 .rd{display:flex;align-items:center;gap:7px;font-size:.8rem;font-weight:700;color:var(--navy);margin-bottom:6px}
 .rd span{color:var(--muted);font-weight:600}
 .rc-b .btn{display:block;text-align:center;margin-top:12px;font-size:.85rem;padding:10px 18px}
-.ci{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:13px 16px;margin-bottom:10px;text-decoration:none;transition:background .2s}
-.ci:hover{background:rgba(255,255,255,.14)}
-.cico{width:36px;height:36px;border-radius:9px;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
-.ci strong{display:block;font-size:.65rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:1px}
-.ci a,.ci span{font-size:.85rem;font-weight:700;color:#fff;text-decoration:none}
-.ci a:hover{color:var(--gold)}
+.ci{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px 18px;margin-bottom:11px;text-decoration:none;transition:background .2s}
+.ci:hover{background:rgba(255,255,255,.12)}
+.cico{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0;color:#fff}
+.ci-text{display:flex;flex-direction:column;gap:1px}
+.ci-text strong{display:block;font-size:.63rem;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;color:var(--gold)}
+.ci-text a,.ci-text span{font-size:.88rem;font-weight:700;color:rgba(255,255,255,.92);text-decoration:none;line-height:1.3}
+.ci-text a:hover{color:var(--gold);text-decoration:underline}
 .soc{display:flex;gap:10px;margin-top:6px}
-.soc a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:10px 14px;text-decoration:none;color:#fff;font-size:.79rem;font-weight:700;transition:background .2s}
-.soc a:hover{background:rgba(255,255,255,.16)}
+.soc-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;padding:12px 16px;text-decoration:none;color:#fff;font-size:.82rem;font-weight:800;transition:all .2s}
+.soc-btn:hover{transform:translateY(-2px);opacity:.9}
+.soc-ig{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)}
+.soc-fb{background:#1877f2}
 .cgrid{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:start}
 .mapbox{border-radius:var(--r);overflow:hidden;border:2px solid rgba(255,255,255,.1)}
 .mhd{background:rgba(255,255,255,.08);padding:13px 17px}
@@ -248,12 +251,33 @@ footer{background:#0f1520;padding:36px 5%;display:grid;grid-template-columns:1fr
   <div>
     <h2 style="font-family:'Playfair Display',serif;font-size:1.85rem;font-weight:800;color:#fff;margin-bottom:12px;line-height:1.2">Come Say Hello</h2>
     <p style="font-size:.93rem;color:rgba(255,255,255,.66);font-weight:600;line-height:1.75;margin-bottom:22px">We&rsquo;d love to meet your family. Call, email, or stop by our center in Fairfax.</p>
-    <a href="tel:7037919656" class="ci"><div class="cico">&#128222;</div><div><strong>Phone</strong><a href="tel:7037919656">703-791-9656</a></div></a>
-    <a href="mailto:admin@anacareacademy.com" class="ci"><div class="cico">&#9993;&#65039;</div><div><strong>Email</strong><a href="mailto:admin@anacareacademy.com">admin@anacareacademy.com</a></div></a>
-    <div class="ci" style="cursor:default"><div class="cico">&#128205;</div><div><strong>Address</strong><span>11200 Waples Mill Rd #200, Fairfax, VA 22030</span></div></div>
+    <a href="tel:7037919656" class="ci">
+      <div class="cico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 3.18a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.37a16 16 0 006.72 6.72l1.13-1.35a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"/></svg>
+      </div>
+      <div class="ci-text"><strong>Phone</strong><a href="tel:7037919656">703-791-9656</a></div>
+    </a>
+    <a href="mailto:admin@anacareacademy.com" class="ci">
+      <div class="cico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <div class="ci-text"><strong>Email</strong><a href="mailto:admin@anacareacademy.com">admin@anacareacademy.com</a></div>
+    </a>
+    <div class="ci" style="cursor:default">
+      <div class="cico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="ci-text"><strong>Address</strong><span>11200 Waples Mill Rd #200, Fairfax, VA 22030</span></div>
+    </div>
     <div class="soc">
-      <a href="https://www.instagram.com/anacareacademy" target="_blank">&#128247; @anacareacademy</a>
-      <a href="https://www.facebook.com/AnaCareAcademy" target="_blank">&#128077; Ana Care Academy</a>
+      <a href="https://www.instagram.com/anacareacademy" target="_blank" class="soc-btn soc-ig">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        @anacareacademy
+      </a>
+      <a href="https://www.facebook.com/AnaCareAcademy" target="_blank" class="soc-btn soc-fb">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        Ana Care Academy
+      </a>
     </div>
   </div>
   <div class="mapbox">
